@@ -1,0 +1,17 @@
+name: Aula 02 - crie um workflow que seja disparado com agendamento e que seja gatilho para outro workflow 
+
+on: 
+  schedule:
+    - cron: '2 * * * *'
+
+jobs:
+  using-schedule-workflows:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Show a message
+        run: echo 'Bem-vindo'
+      - name: Multiple commands
+        run: |
+          node -v
+          npm -v
+          
