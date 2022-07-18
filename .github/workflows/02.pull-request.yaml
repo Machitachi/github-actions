@@ -2,7 +2,7 @@ name: Aula 02 - crie um workflow que seja disparado com agendamento e que seja g
 
 on: 
   schedule:
-    - cron: '2 * * * *'
+    - cron: '20 * * * *'
 
 jobs:
   using-schedule-workflows:
